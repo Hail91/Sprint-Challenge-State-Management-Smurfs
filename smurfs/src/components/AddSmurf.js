@@ -50,7 +50,7 @@ const AddSmurf = (props) => {
                onChange={handleChanges}
                placeholder='Add height here'
                />
-               <button onClick={handleSubmit} type="submit" className="add-btn-2">Add Smurf</button>
+               <button type="button" onClick={handleSubmit} className="btn btn-primary add-btn-2">Add Villager</button>
            </form> 
         </div>
     )

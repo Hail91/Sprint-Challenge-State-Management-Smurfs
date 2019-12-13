@@ -14,17 +14,17 @@ const App = (props) =>  {
         <div className="village">
           {props.smurfs.map(info => {
             return (
-              <div class="card" style={{width: '18rem'}}>
-                <div class="card-body">
-                  <h5 class="card-title">Name: {info.name}</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Age: {info.age}</h6>
-                  <p class="card-text">Height: {info.height}</p>
+              <div className="card bg-primary" style={{width: '18rem'}}>
+                <div className="card-body">
+                  <h5 className="card-title text-white">Name: {info.name}</h5>
+                  <h6 className="card-subtitle mb-2 text-white">Age: {info.age}</h6>
+                  <p className="card-text text-white">Height: {info.height}</p>
                 </div>
               </div>
             )
           })}
         </div>
-        <button className="add-btn" onClick={props.getSmurfs}>Unveil Smurfs</button>
+        <button onClick={props.getSmurfs} type="button" className="btn btn-primary add-btn">Unveil Smurfs</button>
         <AddSmurf />
       </div>
     );
